@@ -1,0 +1,74 @@
+.turn{
+   width: 400px;
+   height: 400px;
+   border-radius: 100%;
+   display: flex;
+   /* justify-content: center;
+   align-items: center; */
+    /* background-color: salmon; */
+    position: relative;
+    animation: chrismi 1s infinite;
+    /* background-color: salmon; */
+}
+.dot{
+    width: 30px;
+    height: 30px;
+    background-color: darkcyan;
+    border-radius: 100%;
+    left: 100px;
+    position: relative;
+
+}
+.turn h1{
+    position: fixed;
+}
+@keyframes chrismi {
+    from{
+       rotate: 0deg;
+    border: 5px solid salmon;
+
+    }
+    to{
+       rotate: 90deg;
+    border: 5px solid blue;
+
+
+    }
+    to{
+    border: 5px solid red;
+    rotate: 180deg;
+
+    }
+    to{
+       rotate: 270deg;
+    border: 5px solid lawngreen;
+
+
+    }
+    to{
+    border: 5px solid turquoise;
+
+      rotate: 360deg;
+
+    }
+    
+}
+body{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+@media screen and (max-width: 950px){
+    body{
+        overflow: hidden;
+    }
+    .turn{
+        width: 200px;
+        height: 200px;
+        
+     }
+}
+
